@@ -1,0 +1,20 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation-duration: 3s;
+}
+@keyframes diva{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 200px;
+        transform: rotateX('');
+
+    }
+}
+div:hover{
+    animation-name: diva;
+
+}

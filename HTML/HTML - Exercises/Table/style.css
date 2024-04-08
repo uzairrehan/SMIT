@@ -1,0 +1,30 @@
+table{
+    background-color: rgb(177, 67, 59)  ;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 40px;
+margin-left: 340px;
+border-style: solid;
+border-color: aliceblue;
+
+} 
+body{
+    background-color: rgb(160, 151, 151);
+}
+
+h1{
+text-align: center;
+color: aliceblue;
+
+}
+table, th, td {
+  border: 1px solid white;
+  border-radius:20px;
+  padding:10px;
+  text-align:center;
+}
+
+h1{
+font-family:cursive;
+}

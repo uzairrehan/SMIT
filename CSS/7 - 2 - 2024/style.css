@@ -1,0 +1,8 @@
+p{
+    transition:1s;
+}
+p:hover{
+  
+    background-color: aquamarine;
+    color: #ffffff;  
+}

@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  border: 1px solid green;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px ;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  border: 1px solid greenyellow;  
+  margin: 20px;
+}
+
