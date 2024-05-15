@@ -1,0 +1,6 @@
+// lastIndexOf
+// indexOf
+
+
+
+

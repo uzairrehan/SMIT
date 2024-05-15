@@ -69,10 +69,10 @@
 
 
 
-let domisile = prompt("where are you from?")
-if (domisile === "karachi" ){
-    console.log("you are not eligible for job")
-}
+// let domisile = prompt("where are you from?")
+// if (domisile === "karachi" ){
+//     console.log("you are not eligible for job")
+// }
 
 
 
