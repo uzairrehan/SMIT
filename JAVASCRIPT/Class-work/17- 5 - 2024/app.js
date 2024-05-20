@@ -141,3 +141,16 @@ setInterval(function () {
 
 
 
+
+let cars = ["toyota", "honda"];
+firstCharacter =  cars[0].slice(0,1).toUpperCase()
+restCharacter = cars[0].slice(1).toLowerCase()
+cars[0] = firstCharacter + restCharacter
+
+
+twoFirstCharacter =  cars[1].slice(0,1).toUpperCase()
+twoRestCharacter = cars[1].slice(1).toLowerCase()
+cars[1] = twoFirstCharacter + twoRestCharacter
+
+
+console.log(cars)
