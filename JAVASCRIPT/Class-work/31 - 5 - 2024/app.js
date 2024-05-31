@@ -43,10 +43,16 @@ function deleteTodo(el) {
   let parentEl = el.parentNode.parentNode;
   parentEl.removeChild(targetNode);
 }
+let targetText;
 function editTodo(el) {
   editTodoContainer.className = "";
   todoInputContainer.className += " hide";
+  targetText = el.parentNode.childNodes[0];
+  editInputEl.value = targetText.nodeValue;
+}
 
-  let targetText = el.parentNode.childNodes[0].nodeValue;
-  editInputEl.value = targetText;
+function upadateTodo() {
+  targetText.nodeValue = editInputEl.value;
+  editTodoContainer.className += " hide";
+  todoInputContainer.className = "";
 }
