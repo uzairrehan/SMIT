@@ -1,7 +1,11 @@
-// to do without array
-
 let todoInput = document.querySelectorAll(".new-todo")[0];
 let todoListDiv = document.querySelectorAll(".todo-list")[0];
+let editTodoContainer = document.querySelectorAll("#edit-todo-container")[0];
+let todoInputContainer = document.querySelectorAll(
+  "#add-new-todo-container"
+)[0];
+let editInputEl = document.querySelectorAll(".edit-todo")[0];
+
 function add() {
   let todoVal = todoInput.value;
   printAllTodos(todoVal);
@@ -23,11 +27,26 @@ function makeTodoListEl(newTodoText) {
   delBtn.appendChild(delText);
   delBtn.setAttribute("onclick", "deleteTodo(this)");
 
+  let editBtn = document.createElement("BUTTON");
+  let editText = document.createTextNode("Edit");
+  editBtn.appendChild(editText);
+  editBtn.setAttribute("onclick", "editTodo(this)");
+
   pEl.appendChild(delBtn);
+  pEl.appendChild(editBtn);
 
   return pEl;
 }
 
-function deleteTodo(pEl) {
-    console.log(pEl);
+function deleteTodo(el) {
+  let targetNode = el.parentNode;
+  let parentEl = el.parentNode.parentNode;
+  parentEl.removeChild(targetNode);
+}
+function editTodo(el) {
+  editTodoContainer.className = "";
+  todoInputContainer.className += " hide";
+
+  let targetText = el.parentNode.childNodes[0].nodeValue;
+  editInputEl.value = targetText;
 }
