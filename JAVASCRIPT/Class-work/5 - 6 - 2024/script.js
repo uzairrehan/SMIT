@@ -62,7 +62,7 @@ function addToCart(el){
     cart.push(el)
     el.qty = 1
     el.totalPrice = el.totalPrice * el.qty ;        
-    console.log(cart);
+    console.log(el);
 } 
 
 
