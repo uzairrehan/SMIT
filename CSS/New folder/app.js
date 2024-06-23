@@ -22,7 +22,7 @@ var Stars = function(args) {
         // 
         window.addEventListener("resize", this.resize.bind(this));
     }
-
+                                               
     this.start = function() {
         this.stars = [];
         for (var i = 0; i < this.starsCounter; i++) {
