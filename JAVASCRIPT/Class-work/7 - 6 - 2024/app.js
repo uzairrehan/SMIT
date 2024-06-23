@@ -121,7 +121,7 @@
 
 
 
-// arrow agar aik line ka hai or kuch return bi ho raha he to is tarh likhenge
+// arrow agar aik line ka hai or kuch return bi ho raha he to is tarh likhenge .this is called implicit return
 // const greet = () => prompt("hello");
 // console.log(greet());
 
@@ -133,7 +133,6 @@
 
 
 // agar aik parameter ho to is tarha function banate heen or return bhi karana ho to
-
 // const makeGreeting = userName => `Welcome ${userName}`
 // let user = makeGreeting('Talha');
 // console.log(user);
@@ -190,4 +189,21 @@
 
 
 
- 
+//  imediately invoked function rxpression (IIFE)
+// global scope ke pollutoion ko hatane keliyen use hota he aur forna baad call karne ke liyen
+
+// khatam hone ke baad semicolon ";" zaroor lagana he end karne ke liyen
+
+
+
+// named IIFE
+(function code() {
+    console.log("hello");
+})();
+
+
+
+// with arrow function 
+((name) => {
+    console.log("hello " + name);
+})("uzair");
