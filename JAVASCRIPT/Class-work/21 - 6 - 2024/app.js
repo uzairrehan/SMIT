@@ -42,3 +42,11 @@ const promise1 = new Promise ((resolve,reject)=>{
 promise1.then(()=>{
     console.log("promise1");
 })
+new Promise ((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("hello im promise 2");
+        resolve()
+    },1000)
+}).then(()=>{
+    console.log("promise2");
+})
