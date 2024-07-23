@@ -47,3 +47,20 @@ function upadateTodo() {
   editTodoContainer.className += " hide";
   todoInputContainer.className = "";
 }
+
+
+
+
+
+
+// practiced JSON.stringify ,JSON.parse
+// const jsObject = {
+//   name:"uzair",
+//   fatherName:"rehan",
+//   rollNo:"174691"
+// }
+// const jsString = JSON.stringify(jsObject) 
+// console.log(jsString ,typeof jsString);
+// const myObject = JSON.parse(jsString)
+// console.log( jsString,myObject);
+// console.log(typeof jsString,typeof myObject);
