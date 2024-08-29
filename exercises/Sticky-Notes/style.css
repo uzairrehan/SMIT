@@ -1,0 +1,108 @@
+body,html {
+  width: 100%;
+  background-color: #00002c;
+  color: #008cff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  margin: 0px;
+}
+h1 {
+  padding: 20px;
+}
+.output {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 700px;
+}
+.output div {
+  width: 200px;
+  background-color: #fff;
+  padding: 10px;
+  min-height: 200px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #008cff;
+  justify-content: space-between;
+}
+div span {
+  align-self: end;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#add-new-todo, #edit-todo{
+  padding: 30px;
+}
+.button {
+  position: relative;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #008cff;
+  transition: all 0.2s ease;
+}
+.input-style {
+  color: white;
+  border: 2px solid #008cff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  width: 200px;
+  line-height: 2em;
+  font-size: 23px;
+  height: 44px;
+  margin: 10px;
+}
+.input-style:active {
+  box-shadow: 2px 2px 15px #008cff inset;
+}
+p {
+  height: 100px;
+  width: 100%;
+  overflow: auto;
+  word-wrap: break-word;
+}
+.hero {
+  border: 4px solid #008cff;
+  border-radius: 20px;
+  border-style: dotted;
+  margin: 10px;
+  padding: 15px;
+}
+h2 {
+  color: #fff;
+}
+
+.bottom{
+  color: #fff ;
+  background-color:#00002c ;
+  position: fixed;
+  bottom: -45px;
+  width: auto;
+  padding: 20px;
+}
+.error-msg {
+  color: red;
+  text-align: center;
+  padding-top: 20px;
+}
+.hide {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .output {
+    width: 230px;
+  }
+}

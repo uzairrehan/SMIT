@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://scalebranding.com/wp-content/uploads/2021/10/C-line-silver.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <h3 class="h3">Temperature<br />Converter</h3>
+
+      <input placeholder="Enter Value" class="input" type="number" id="num" onchange="converter()"/>
+
+      <label for="toConvert">Value type :</label>
+      <div class="select">
+        <select name="toConvert" id="toConvert">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+      </div>
+
+      <label for="toChange">To convert type :</label>
+      <div class="select">
+        <select name="toChange" id="toChange">
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Celsius">Celsius</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+      </div>
+
+      <button onclick="converter()" class="button">Convert</button>
+      <h3>Output</h3>
+      <p id="output"></p>
+      <div>
+        <details>
+          <summary>
+            <h3>History</h3>
+          </summary>
+          <div id="history"></div>
+        </details>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
